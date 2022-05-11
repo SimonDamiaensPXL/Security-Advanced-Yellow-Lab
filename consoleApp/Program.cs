@@ -1,29 +1,60 @@
 ﻿using System.Threading.Tasks;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using Newtonsoft.Json.Linq;
 
 namespace HelloWorld
 {
     class Program
     {
-        private static readonly HttpClient client = new HttpClient();
+        private static readonly HttpClient _httpClient = new HttpClient();
+        private static readonly string _clientId = "gert";
+        private static readonly string _clientSecret = "finland";
+
 
         static async Task Main(string[] args)
         {
-            await ProcessRepositories();
+            Console.WriteLine("Type een gemeente of postcode:");
+
+            var input = Console.ReadLine();
+
+            await GetAccessToken(input);
         }
 
-        private static async Task ProcessRepositories()
+        public static async Task GetAccessToken(string apiPath)
         {
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Accept.Add(
-                new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
-            client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+            var baseUri = new Uri("http://localhost:5000/api/seatholders/");
 
-            var stringTask = client.GetStringAsync("https://api.github.com/orgs/dotnet/repos");
+            var requestToken = new HttpRequestMessage(HttpMethod.Post, "http://localhost:5002/connect/token")
+            {
+                Content = new FormUrlEncodedContent(new KeyValuePair<string?, string?>[]
+                {
+                    new("client_id", _clientId),
+                    new("client_secret", _clientSecret),
+                    new("scope", "krc-genk"),
+                    new("grant_type", "client_credentials")
+                })
+            };
 
-            var msg = await stringTask;
-            Console.Write(msg);
+            var responseIDS = await _httpClient.SendAsync(requestToken);
+
+            var bearerData = await responseIDS.Content.ReadAsStringAsync();
+
+            var bearerToken = JObject.Parse(bearerData)["access_token"].ToString();            
+
+            var requestData = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri(baseUri, apiPath),
+            };
+
+            requestData.Headers.TryAddWithoutValidation("Authorization", String.Format("Bearer {0}", bearerToken));
+
+            var responseAPI = await _httpClient.SendAsync(requestData);
+            
+            Console.WriteLine(await responseAPI.Content.ReadAsStringAsync());
         }
     }
 }

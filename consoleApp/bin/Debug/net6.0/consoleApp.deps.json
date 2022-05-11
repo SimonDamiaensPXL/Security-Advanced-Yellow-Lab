@@ -7,8 +7,19 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "consoleApp/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "7.0.1-beta3"
+        },
         "runtime": {
           "consoleApp.dll": {}
+        }
+      },
+      "Newtonsoft.Json/7.0.1-beta3": {
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.1.18503"
+          }
         }
       }
     }
@@ -18,6 +29,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Newtonsoft.Json/7.0.1-beta3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-065sWAmniKTf+Xg28xrDMwKKU7v0sryThZsB6GwVW9Jm3am0INdbGxhZxwy/0nyzKrh+MkFfS4Bq9na3xH3CkQ==",
+      "path": "newtonsoft.json/7.0.1-beta3",
+      "hashPath": "newtonsoft.json.7.0.1-beta3.nupkg.sha512"
     }
   }
 }

@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "/gCDcP+RrjbjErkPM2cCAWv5Rqkn6YA/uVQFaRlOtHqte3LFbbdw8rjDbujwEqXgpqghjOvcS1FfurowOV9arA==",
+  "dgSpecHash": "k9R6YJQfVdzVteH64UxRO1mCCX03lM19qwv7MXibsDuiqccqEbAfApMHee3r+eSmjNcmQRz0pUmmdPDYaaBiXA==",
   "success": true,
   "projectFilePath": "D:\\School\\Security Advanced\\Yellow\\consoleApp\\consoleApp.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\simon\\.nuget\\packages\\newtonsoft.json\\7.0.1-beta3\\newtonsoft.json.7.0.1-beta3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Newtonsoft.Json 7.0.1-beta3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

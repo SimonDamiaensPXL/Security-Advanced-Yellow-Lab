@@ -13,3 +13,5 @@ D:\School\Security Advanced\Yellow\consoleApp\obj\Debug\net6.0\refint\consoleApp
 D:\School\Security Advanced\Yellow\consoleApp\obj\Debug\net6.0\consoleApp.pdb
 D:\School\Security Advanced\Yellow\consoleApp\obj\Debug\net6.0\consoleApp.genruntimeconfig.cache
 D:\School\Security Advanced\Yellow\consoleApp\obj\Debug\net6.0\ref\consoleApp.dll
+D:\School\Security Advanced\Yellow\consoleApp\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\School\Security Advanced\Yellow\consoleApp\obj\Debug\net6.0\consoleApp.csproj.CopyComplete
