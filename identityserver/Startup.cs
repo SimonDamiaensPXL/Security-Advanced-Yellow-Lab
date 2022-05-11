@@ -11,6 +11,8 @@ namespace IdentityServer
 {
     public class Startup
     {        
+        private const string corsPolicy = "_allowSpecificOrigins";
+
         public IWebHostEnvironment Environment { get; }
 
         public Startup(IWebHostEnvironment environment)
@@ -22,10 +24,19 @@ namespace IdentityServer
         {
             // uncomment, if you want to add an MVC-based UI
             //services.AddControllersWithViews();
-            var builder = services.AddIdentityServer()
+            var builder = services.AddIdentityServer(x => {
+                    x.IssuerUri = "http://identity";
+                })
                 .AddDeveloperSigningCredential()
                 .AddInMemoryApiScopes(Config.ApiScopes)
                 .AddInMemoryClients(Config.Clients);
+
+            services.AddCors(options => {
+                options.AddPolicy(name: corsPolicy,
+                    builder => {
+                        builder.WithOrigins("http://localhost:8080");
+                    });
+            });
         }
 
         public void Configure(IApplicationBuilder app)
@@ -34,6 +45,9 @@ namespace IdentityServer
             {
                 app.UseDeveloperExceptionPage();
             }        
+
+            app.UseCors(corsPolicy);
+
             app.UseIdentityServer();
         }
     }

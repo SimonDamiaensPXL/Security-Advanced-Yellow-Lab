@@ -36,3 +36,41 @@ C:\Users\Sam\Documents\PXL\Security Advanced\2122\Lab Yellow Team\api\bin\Debug\
 C:\Users\Sam\Documents\PXL\Security Advanced\2122\Lab Yellow Team\api\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Sam\Documents\PXL\Security Advanced\2122\Lab Yellow Team\api\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\Sam\Documents\PXL\Security Advanced\2122\Lab Yellow Team\api\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\appsettings.Development.json
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\appsettings.json
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\api.StaticWebAssets.xml
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\api.exe
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\api.deps.json
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\api.runtimeconfig.json
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\api.runtimeconfig.dev.json
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\api.dll
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\api.pdb
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\CsvHelper.dll
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\School\Security Advanced\Yellow\api\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\api.csproj.AssemblyReference.cache
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\api.GeneratedMSBuildEditorConfig.editorconfig
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\api.AssemblyInfoInputs.cache
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\api.AssemblyInfo.cs
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\api.csproj.CoreCompileInputs.cache
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\api.MvcApplicationPartsAssemblyInfo.cs
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\api.MvcApplicationPartsAssemblyInfo.cache
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\scopedcss\bundle\api.styles.css
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\staticwebassets\api.StaticWebAssets.Manifest.cache
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\api.RazorTargetAssemblyInfo.cache
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\api.csproj.CopyComplete
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\api.dll
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\refint\api.dll
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\api.pdb
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\api.genruntimeconfig.cache
+D:\School\Security Advanced\Yellow\api\obj\Debug\net5.0\ref\api.dll
