@@ -10,7 +10,7 @@ namespace ConsoleApp
     class Program
     {
         private static readonly HttpClient _httpClient = new HttpClient();
-        private static readonly string _clientId = "gert";
+        private static readonly string _clientId = "genk-consolapp";
         private static readonly string _clientSecret = "finland";
 
         static async Task Main(string[] args)
@@ -21,7 +21,7 @@ namespace ConsoleApp
 
             string seatholders = await GetSeatholders(input);
 
-            Console.Write(seatholders);
+            Console.Write(seatholders + " Seatholders");
         }
 
         public static async Task<string> GetAccessToken()

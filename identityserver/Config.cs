@@ -36,7 +36,7 @@ namespace IdentityServer
                 },
                 new Client
                 {
-                    ClientId = "gert",
+                    ClientId = "genk-consolapp",
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     ClientSecrets = 
                     {
